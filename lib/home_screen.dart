@@ -1,5 +1,19 @@
 // home_screen.dart
 import 'package:flutter/material.dart';
+// ignore: depend_on_referenced_packages
+import 'package:instagram/login_page.dart';
+// ignore: depend_on_referenced_packages
+import 'package:shared_preferences/shared_preferences.dart';
+
+class HomeApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
+    );
+  }
+}
 
 class HomeScreen extends StatefulWidget {
   @override
